@@ -3,7 +3,7 @@ package org.gnunet.ext.se;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.gnunet.ext.se.extractor.Crawler;
+import org.gnunet.ext.se.crawler.Crawler;
 
 public class Controller {
 	public void crawl() {

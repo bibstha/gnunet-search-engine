@@ -1,7 +1,7 @@
 package org.gnunet.ext;
 
 import org.gnunet.ext.se.Controller;
-import org.gnunet.ext.se.extractor.Crawler;
+import org.gnunet.ext.se.crawler.Crawler;
 import org.gnunet.util.*;
 
 public class MyExt {

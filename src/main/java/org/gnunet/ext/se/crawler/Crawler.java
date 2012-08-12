@@ -1,4 +1,4 @@
-package org.gnunet.ext.se.extractor;
+package org.gnunet.ext.se.crawler;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +17,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.gnunet.ext.se.CrawlQueue;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -60,7 +59,7 @@ public class Crawler {
 		if (urls != null) {
 			for (String url : urls) {
 				// @TODO: Check for duplicates
-				CrawlQueue.getInstance().push(url);
+				Queue.getInstance().push(url);
 			}
 		}
 	}

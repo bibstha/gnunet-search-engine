@@ -1,19 +1,19 @@
-package org.gnunet.ext.se;
+package org.gnunet.ext.se.crawler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CrawlQueue {
+public class Queue {
 	
 	List<String> queue = new ArrayList<String>();
 	
-	static CrawlQueue instance;
+	static Queue instance;
 	
-	private CrawlQueue() {}
+	private Queue() {}
 	
-	public static CrawlQueue getInstance() {
+	public static Queue getInstance() {
 		if (null == instance) {
-			instance = new CrawlQueue();
+			instance = new Queue();
 		}
 		return instance;
 	}
